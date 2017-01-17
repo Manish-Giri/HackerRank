@@ -3,7 +3,7 @@ abstract class AbstractClassBook
 {
     String title;
     String author;
-    Book(String t,String a){
+    AbstractClassBook(String t,String a){
         title=t;
         author=a;
     }
