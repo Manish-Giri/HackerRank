@@ -16,7 +16,7 @@ public class LinkedList {
         }
     }
 
-    private static void display(Node head) {
+    private void display(Node head) {
         Node start = head;
         while(start != null) {
             System.out.print(start.data + " ");
@@ -24,20 +24,40 @@ public class LinkedList {
         }
     }
 
-    private static  Node insert(Node head,int data) {
+    private Node insert(Node head, int data) {
         //Complete this method
+        Node newNode;
+        if(head == null) {
+            newNode = new Node(data);
+            newNode.next = null;
+            return newNode;
+
+        }
+        else {
+            newNode = new Node(data);
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+            newNode.next = null;
+            return head;
+        }
     }
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         Node head = null;
+
+        LinkedList linkedList = new LinkedList();
+
         int N = sc.nextInt();
 
         while(N-- > 0) {
             int ele = sc.nextInt();
-            head = insert(head,ele);
+            head = linkedList.insert(head,ele);
         }
-        display(head);
+        linkedList.display(head);
         sc.close();
     }
 
