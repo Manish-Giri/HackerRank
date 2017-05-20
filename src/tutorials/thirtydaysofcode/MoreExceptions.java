@@ -9,6 +9,15 @@ public class MoreExceptions {
 
     private class Calculator {
 
+        private double power(int n, int p) throws Exception {
+            if(n < 0 || p < 0) {
+                throw new Exception("n and p should be non-negative");
+            }
+            else {
+                return Math.pow(n, p);
+            }
+        }
+
     }
 
     public static void main(String[] args) {
@@ -21,7 +30,7 @@ public class MoreExceptions {
             int p = in.nextInt();
             Calculator myCalculator = moreExceptions.new Calculator();
             try {
-                int ans = myCalculator.power(n, p);
+                int ans = (int) myCalculator.power(n, p);
                 System.out.println(ans);
             }
             catch (Exception e) {
