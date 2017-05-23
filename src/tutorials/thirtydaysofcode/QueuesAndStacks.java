@@ -10,13 +10,13 @@ public class QueuesAndStacks {
 
     private static class Solution {
         private Stack<Character> stack;
-        private Queue<Character> queue;
-        private List<Character> q;
+        private LinkedList<Character> queue;
+        // private List<Character> q;
 
         Solution() {
             stack = new Stack<>();
             queue = new LinkedList<>();
-            q = new LinkedList<>();
+            // q = new LinkedList<>();
 
         }
 
@@ -25,9 +25,16 @@ public class QueuesAndStacks {
         }
 
         private char popCharacter() {
-            if(!stack.isEmpty()) {
-                return stack.pop();
-            }
+            return stack.pop();
+        }
+
+
+        private void enqueueCharacter(char ch) {
+            queue.addLast(ch);
+        }
+
+        private char dequeueCharacter() {
+            return queue.removeFirst();
         }
 
 
