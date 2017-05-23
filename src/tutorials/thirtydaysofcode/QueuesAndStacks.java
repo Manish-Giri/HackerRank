@@ -1,13 +1,41 @@
 package tutorials.thirtydaysofcode;
 
-import java.util.Scanner;
+import java.util.*;
+import java.util.LinkedList;
 
 /**
  * Created by manishgiri on 5/22/17.
  */
 public class QueuesAndStacks {
 
+    private static class Solution {
+        private Stack<Character> stack;
+        private Queue<Character> queue;
+        private List<Character> q;
+
+        Solution() {
+            stack = new Stack<>();
+            queue = new LinkedList<>();
+            q = new LinkedList<>();
+
+        }
+
+        private void pushCharacter(char ch) {
+            stack.add(ch);
+        }
+
+        private char popCharacter() {
+            if(!stack.isEmpty()) {
+                return stack.pop();
+            }
+        }
+
+
+    }
+
     public static void main(String[] args) {
+
+
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
         scan.close();
