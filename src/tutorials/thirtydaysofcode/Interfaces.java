@@ -1,5 +1,6 @@
 package tutorials.thirtydaysofcode;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -15,7 +16,19 @@ public class Interfaces {
 
         @Override
         public int divisorSum(int n) {
-            return 0;
+            ArrayList<Integer> divisors = new ArrayList<>();
+            int result = 0;
+            for(int i = 1; i <= n; i++) {
+                if(n % i == 0) {
+                    divisors.add(i);
+                }
+            }
+
+            for(int k: divisors) {
+                result += k;
+            }
+
+            return result;
         }
     }
 
