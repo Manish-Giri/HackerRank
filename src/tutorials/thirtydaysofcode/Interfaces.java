@@ -16,16 +16,13 @@ public class Interfaces {
 
         @Override
         public int divisorSum(int n) {
-            ArrayList<Integer> divisors = new ArrayList<>();
+            // ArrayList<Integer> divisors = new ArrayList<>();
             int result = 0;
             for(int i = 1; i <= n; i++) {
                 if(n % i == 0) {
-                    divisors.add(i);
+                    // divisors.add(i);
+                    result += i;
                 }
-            }
-
-            for(int k: divisors) {
-                result += k;
             }
 
             return result;
