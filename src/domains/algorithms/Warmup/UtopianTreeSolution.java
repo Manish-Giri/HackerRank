@@ -1,9 +1,5 @@
-package algorithms.Warmup;
-import java.io.*;
+package domains.algorithms.Warmup;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 
 /**

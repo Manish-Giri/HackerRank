@@ -1,4 +1,4 @@
-package algorithms.Warmup;
+package domains.algorithms.Warmup;
 
 import java.util.ArrayList;
 import java.util.Arrays;

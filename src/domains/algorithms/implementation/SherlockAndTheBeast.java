@@ -1,4 +1,4 @@
-package algorithms.implementation;
+package domains.algorithms.implementation;
 
 /**
  * Created by manishgiri on 5/27/16.

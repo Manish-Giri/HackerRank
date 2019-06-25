@@ -1,9 +1,4 @@
-package algorithms.Warmup;
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+package domains.algorithms.Warmup;
 
 import java.util.Scanner;
 /**

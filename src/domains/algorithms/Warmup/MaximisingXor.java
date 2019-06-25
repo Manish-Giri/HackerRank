@@ -1,4 +1,4 @@
-package algorithms.Warmup;
+package domains.algorithms.Warmup;
 import java.util.Scanner;
 /**
  * Created by user1 on 3/29/15.

@@ -1,4 +1,4 @@
-package algorithms.Warmup;
+package domains.algorithms.Warmup;
 import java.io.*;
 import java.util.*;
 import java.text.*;
