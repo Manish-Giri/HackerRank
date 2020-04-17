@@ -7,3 +7,7 @@ bin
 
 # class files
 Java/out/
+
+Interview-Prep-Kit/.idea
+Interview-Prep-Kit/*.iml
+
