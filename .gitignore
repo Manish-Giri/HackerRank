@@ -4,3 +4,6 @@
 .idea
 HackerRank.iml
 bin
+
+# class files
+Java/out/
