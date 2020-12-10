@@ -13,4 +13,5 @@ Interview-Prep-Kit/*.iml
 
 /**/out/
 /**/*.iml
+# FOR MYSQL statements
 /**/*.log
