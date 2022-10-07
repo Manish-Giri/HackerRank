@@ -1,4 +1,4 @@
-package domains.algorithms.implementation.GradingStudents;
+package domains.algorithms.Implementation.GradingStudents;
 
 import java.io.*;
 import java.util.ArrayList;
